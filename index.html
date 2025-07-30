@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Campeão do Condomínio - Memórias de Infância</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4cc9f0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            color: var(--dark);
+            background-color: var(--light);
+            background-image: linear-gradient(135deg, #f5f7fa 0%, #e4f1ff 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .story-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            margin: 3rem 0;
+            position: relative;
+        }
+        
+        .story-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .story-header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path fill="rgba(255,255,255,0.05)" d="M0,0 L100,0 L100,100 Q50,80 0,100 Z"></path></svg>');
+            background-size: 100% 100%;
+            opacity: 0.3;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            position: relative;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            font-weight: 300;
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+        
+        .story-content {
+            padding: 3rem;
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--dark);
+            font-weight: 400;
+        }
+        
+        .highlight {
+            color: var(--primary);
+            font-weight: 600;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .highlight::after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 0;
+            width: 100%;
+            height: 6px;
+            background-color: var(--accent);
+            opacity: 0.3;
+            z-index: -1;
+            border-radius: 2px;
+            transition: all 0.3s ease;
+        }
+        
+        .highlight:hover::after {
+            height: 12px;
+            opacity: 0.5;
+        }
+        
+        .story-footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: #f8f9fa;
+            color: var(--gray);
+            font-style: italic;
+            font-weight: 300;
+            border-top: 1px solid rgba(0,0,0,0.05);
+        }
+        
+        .decoration {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: rgba(76, 201, 240, 0.1);
+            z-index: 0;
+        }
+        
+        .dec-1 {
+            top: -30px;
+            right: -30px;
+            width: 150px;
+            height: 150px;
+        }
+        
+        .dec-2 {
+            bottom: 20px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .story-content {
+                padding: 2rem 1.5rem;
+            }
+            
+            .story-header {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="story-card">
+            <div class="decoration dec-1"></div>
+            <div class="decoration dec-2"></div>
+            
+            <div class="story-header">
+                <h1>Memórias de uma infância cheia de futebol e aventuras</h1>
+                <div class="subtitle"> 🥅 ⚽ 🏃‍♂️</div>
+            </div>
+            
+            <div class="story-content">
+                <p>Minha infância foi marcada por reclamações de vizinhos, mas nunca por maldade — só porque o futebol era minha paixão. Diferente das histórias de criança de rua, meu universo era o condomínio: o asfalto perfeito, os jardins impecáveis e os carros que viravam traves improvisadas.</p>
+
+                <p>Todos os dias seguiam o mesmo ritual. Mal acabavam as aulas, eu corria para casa, jogava a mochila no chão e reunia a turma. O jogo começava tranquilo, mas invariavelmente terminava em discussão acalorada. <span class="highlight">"Foi pênalti!"</span>, <span class="highlight">"Não foi nada!"</span>, e quando a briga esquentava, alguém sempre corria para reclamar na portaria. Minha mãe já sabia — bastava a síndica aparecer na nossa porta para ela me dar aquele olhar de <span class="highlight">"de novo?"</span>.</p>
+
+                <p>Eu argumentava que tinha sido injustiçado, ela suspirava profundamente, e no final eu sempre escapava da bronca porque era o queridinho da família. Meu pai nunca foi de brigar, apenas balançava a cabeça e dizia com um meio sorriso: <span class="highlight">"Pelo menos joga direito"</span>.</p>
+
+                <p>No condomínio, todos me conheciam. Ou como o craque da bola ou como o encrenqueiro oficial. Mas no fundo, até os vizinhos mais rabugentos torciam por mim. Afinal, quem resistia a parar para assistir quando eu driblava todo o time e mandava a bola no fundo da rede?</p>
+
+                <p>Anos depois, ao passar pelas mesmas ruas e quadras, cada memória voltava com clareza: as reclamações, as brigas bobas, as reconciliações pós-jogo. Minha infância não foi nas ruas, mas sim entre muros, jardins cuidados e mães gritando das sacadas. Mesmo sem irmãos mais velhos ou repreensões duras do meu pai, eu tive tudo o que precisava: uma bola, um espaço para jogar e amigos que transformaram nosso condomínio tranquilo em um verdadeiro estádio de campeonato.</p>
+            </div>
+            
+            <div class="story-footer">
+                Fim
+            </div>
+        </div>
+    </div>
+</body>
+</html>
